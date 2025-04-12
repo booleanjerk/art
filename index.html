@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guess the ASCII!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="main-wrapper">
+  <div id="game">
+    <div id="streak">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <div id="question-container">
+      <div id="question"></div>
+      <div id="options"></div>
+    </div>
+
+    <div id="ascii-frame">
+      <pre id="ascii-art"></pre>
+    </div>
+  </div>
+
+  <div id="discovered-list" style="margin-top: 2rem;">
+    <h3>Discovered Artworks:</h3>
+    <ul id="discovered-artworks"></ul>
+  </div>
+  </div>
+  
+
+  <script src="questions.js"></script>
+  <script src="art.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
