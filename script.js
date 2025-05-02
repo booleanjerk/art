@@ -112,11 +112,18 @@ function askForGuess() {
   }
 
   if (guess.trim().toLowerCase() === currentArt.name.toLowerCase()) {
-    loadNewArtwork();
+    // Show the full image before moving on
+    document.getElementById('ascii-art').textContent = currentArt.text;
+
+    // Small delay so user can view it
+    setTimeout(() => {
+      loadNewArtwork();
+    }, 2000);
   } else {
     scrollToTop();
   }
 }
+
 
 function loadNewArtwork() {
   totalQuestionsAnswered += revealedCount;
